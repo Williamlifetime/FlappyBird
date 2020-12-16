@@ -1,0 +1,123 @@
+#game {
+    width: 800px;
+    height: 600px;
+    border: 2px solid;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    #gameMenu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 800px;
+        height: 400px;
+        background-color: black;
+        opacity: 0.7;
+        z-index: 2;
+        text-align: center;
+        padding-top: 200px;
+
+        h1 {
+            color: green;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 15px 25px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+
+            &:hover {
+                background-color: #3e8e41
+            }
+
+            &:active {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+        }
+    }
+
+    #gameover_scr {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 800px;
+        height: 600px;
+        background-color: black;
+        opacity: 0.7;
+        z-index: 2;
+        display: none;
+        text-align: center;
+
+        h1,
+        h2,
+        h3 {
+            color: white;
+        }
+    }
+
+    #sky {
+        position: absolute;
+        width: 1600px;
+        height: 600px;
+        top: 0;
+        left: 0;
+        background: url(../img/sky.png);
+    }
+
+    #land {
+        width: 1600px;
+        height: 112px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url(../img/land.png);
+    }
+
+    #bird {
+        width: 33px;
+        height: 26px;
+        background: url(../img/bird.png);
+        left: 200px;
+        top: 150px;
+        background-position: -113px -10px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .pipeup {
+        background: url(../img/pipeDown.png) no-repeat left bottom;
+        width: 52px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .pipedown {
+        background: url(../img/pipeUp.png) no-repeat;
+        height: 200px;
+        width: 52px;
+        position: absolute;
+        bottom: 112px;
+        right: 0;
+    }
+}
+
+.msg {
+    text-align: center;
+}
